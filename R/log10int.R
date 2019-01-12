@@ -3,7 +3,9 @@ log10int <- function (x, ...) {
   UseMethod("mylog", x)
 }
 
-#methods
+#S3 methods
+
+#S3 method for numerics
 log10int.numeric <- function(x, ...){
   ret <- numeric(length(x))
   i <- 1
@@ -24,6 +26,7 @@ log10int.numeric <- function(x, ...){
   return(ret)
 }
 
+#S3 default method
 log10int.default <- function(x, ...){
   warning(paste("log10int only takes arguments of type numeric, not  ", class(x)))
 }
