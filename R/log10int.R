@@ -18,7 +18,8 @@ log10int.numeric <- function(x, ...){
       #and abs((v-nb)/nb < 1)) (v-nb in (-0.01, 0.01), nb >= 1)
       y <- (v-nb)/nb
       appr <- y-y^2/2+y^3/3-y^4/4
-      ans <- ans + 0.43429*appr + 3.0557e-07 #log(x) = log(ans)+log(e)*ln(x/nb) + Korrekturfaktor
+      #log(x) = log(ans)+log(e)*ln(x/nb) + correction factor (tried out which factor reduced the error)
+      ans <- ans + 0.43429*appr + 3.0557e-07
     }
     ret[i] <- ans
     i <- i+1
