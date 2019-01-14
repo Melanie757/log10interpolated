@@ -1,3 +1,12 @@
+#' Title
+#'
+#' @param x
+#'
+#' @return vector of interpolated log10(x)
+#' @export
+#'
+#' @examples log10int(5)
+
 #generic function
 log10int <- function (x, ...) {
   UseMethod("mylog", x)

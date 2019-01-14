@@ -12,6 +12,8 @@
 #'
 #' @keywords datasets
 #'
+#' @export
+#'
 #' @examples
 #' data(log10data)
 #' k <- log10data$k
