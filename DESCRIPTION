@@ -1,6 +1,6 @@
 Package: log10interpolated
 Type: Package
-Title: An interpolation of log10 between 1 and 100.
+Title: An interpolation of log10 for values between 1 and 100.
 Version: 0.1.0
 Author: Melanie Michels
 Maintainer: Melanie Michels <m.michels@tum.de>
