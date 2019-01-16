@@ -6,5 +6,5 @@ test_that("values in the dataset are exact", {
   expect_is(log10data,'data.frame')
   expect_is(log10data$k, 'numeric')
   expect_is(log10data$logk, 'numeric')
-  expect_that(log10data$example, is_a('numeric'))
+  expect_is(log10data$example, 'numeric')
 })
