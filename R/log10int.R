@@ -2,8 +2,9 @@
 #'
 #' log10int interpolates the log10 between 1 and 100. Therefor it uses a table with the log10 values
 #' between 1 and 100 in steps of 0.01, computed with the R log10 function. The accuracy of the interpolation
-#' is 4.234965e-07 in mean and in hte order of 1e-3 in the worst case. It is a generic function and S3 methods
-#' exists for the class numeric and default.
+#' is in the order of 1e-6 in mean and in the order of 1e-3 in the worst case (tested on the example column in
+#' log10data, which consists of randomly generated numbers between 1 and 100).
+#' It is a generic function and S3 methods exists for the class numeric and default.
 #'
 #' @param x a numeric or vector of numerics
 #'
