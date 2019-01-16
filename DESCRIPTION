@@ -7,7 +7,7 @@ Maintainer: Melanie Michels <m.michels@tum.de>
 Description: This package provides an interpolation of log10 using a lookup table. 
     The table contains the log10 values between 1 and 100 in steps of 0.01. Between this values the log10 is interpolated depending on the nearest value stored in the lookup table. This yield an accuracy of ...
     (Idea from https://www.dsprelated.com/showarticle/1047.php)
-License: What license is it under?
+License:
 Encoding: UTF-8
 LazyData: true
 Suggests: 
