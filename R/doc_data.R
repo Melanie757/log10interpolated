@@ -6,13 +6,9 @@
 #'
 #' @docType data
 #'
-#' @usage data(log10data)
-#'
 #' @format A dataframe with 9901 rows and 2 columns.
 #'
 #' @keywords datasets
-#'
-#' @export
 #'
 #' @examples
 #' data(log10data)
