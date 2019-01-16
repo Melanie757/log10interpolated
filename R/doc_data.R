@@ -10,9 +10,4 @@
 #'
 #' @keywords datasets
 #'
-#' @examples
-#' data(log10data)
-#' k <- log10data$k
-#' logk <- log10data$logk
-#' \donttest{plot(k, logk)}
 "log10data"
