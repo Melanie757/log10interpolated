@@ -7,4 +7,5 @@ test_that("values in the dataset are exact", {
   expect_is(log10data$k, 'numeric')
   expect_is(log10data$logk, 'numeric')
   expect_is(log10data$example, 'numeric')
+  expect_lt(mean(abs(log10int(log10data$example)-log10(log10data$example))), 3e-6)
 })
