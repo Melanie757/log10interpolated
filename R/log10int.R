@@ -3,9 +3,10 @@
 #' @param x
 #'
 #' @return vector of interpolated log10(x)
-#' @export
 #'
 #' @examples log10int(5)
+#'
+#' @export
 
 #generic function
 log10int <- function (x, ...) {
@@ -14,6 +15,7 @@ log10int <- function (x, ...) {
 
 #S3 methods
 
+#' @export
 #S3 method for numerics
 log10int.numeric <- function(x, ...){
   ret <- numeric(length(x))
@@ -36,6 +38,7 @@ log10int.numeric <- function(x, ...){
   return(ret)
 }
 
+#' @export
 #S3 default method
 log10int.default <- function(x, ...){
   warning(paste("log10int only takes arguments of type numeric, not  ", class(x)))
