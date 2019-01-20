@@ -25,6 +25,8 @@ log10int <- function (x, ...) {
 
 #S3 methods
 
+#S3 method for (vector of) numerics
+
 #' Interpolated log10
 #'
 #' This method interpolates the log10 between 1 and 100 for values of the class numeric. Therefor it uses a
@@ -40,8 +42,9 @@ log10int <- function (x, ...) {
 #'
 #' @examples log10int(5)
 #' log10int(c(3.77, 6.228))
+#'
 #' @export
-#S3 method for numerics
+
 log10int.numeric <- function(x, ...){
   ret <- numeric(length(x))
   i <- 1
@@ -63,6 +66,8 @@ log10int.numeric <- function(x, ...){
   return(ret)
 }
 
+#S3 default method
+
 #' Interpolated log10
 #'
 #' This is the default mwthod of log10int. It prints a warning if an object of another type than numeric
@@ -73,8 +78,9 @@ log10int.numeric <- function(x, ...){
 #' @param ... further arguments passed to or from other methods
 #'
 #' @return a warning that the method cannot handle the given class of data
+#'
 #' @export
-#S3 default method
+
 log10int.default <- function(x, ...){
   warning(paste("log10int only takes arguments of type numeric, not  ", class(x)))
 }
