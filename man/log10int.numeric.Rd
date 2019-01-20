@@ -23,4 +23,5 @@ for the class numeric and default.
 \examples{
 log10int(5)
 log10int(c(3.77, 6.228))
+
 }

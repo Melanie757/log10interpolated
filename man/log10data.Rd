@@ -4,19 +4,14 @@
 \name{log10data}
 \alias{log10data}
 \title{Values of log10 to interpolate between}
-\format{A dataframe with 9901 rows and 2 columns.}
+\format{A dataframe with 9901 rows and 3 columns.}
 \usage{
 log10data
 }
 \description{
 The data is generated with R, such that the first column are the values from
-1 to 100 in steps of 0.01. The second colum is the log10 function from R of
-the first column.
-}
-\examples{
-data(log10data)
-k <- log10data$k
-logk <- log10data$logk
-\donttest{plot(k, logk)}
+1 to 100 in steps of 0.01. The second column is the log10 function from R of
+the first column. The third column contains randomly generated numbers, sorted,
+between 1 and 100 to test the log10int method.
 }
 \keyword{datasets}

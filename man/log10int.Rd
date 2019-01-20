@@ -18,8 +18,9 @@ If no object of the class numeric is given to the function, a warning is printed
 \description{
 log10int interpolates the log10 between 1 and 100. Therefor it uses a table with the log10 values
 between 1 and 100 in steps of 0.01, computed with the R log10 function. The accuracy of the interpolation
-is in the order of 1e-5. It is a generic function and S3 methods exists for the class numeric and
-default.
+is in the order of 1e-6 in mean and in the order of 1e-3 in the worst case (tested on the example column in
+log10data, which consists of randomly generated numbers between 1 and 100).
+It is a generic function and S3 methods exists for the class numeric and default.
 }
 \examples{
 log10int(5)
