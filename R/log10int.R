@@ -49,6 +49,7 @@ log10int.numeric <- function(x, ...){
   ret <- numeric(length(x))
   i <- 1
   for (v in x) {
+    if(v > 140) {warning("For values higher than 140 the interpolation is not reliable anymore.")}
     r <- which.min(abs(log10data$k-v)) #row of the nearest value to x
     ans <- log10data[r,"logk"]
     nb <- log10data[r,"k"]
